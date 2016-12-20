@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Stage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Stages</value>
+    </caseValues>
+    <fields>
+        <label><!-- Crowd Capacity --></label>
+        <name>Crowd_Capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Festival --></label>
+        <name>Festival_Stages__c</name>
+        <relationshipLabel><!-- Stages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Has Piano --></label>
+        <name>Has_Piano__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Stage --></label>
+        <name>Main_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outdoor --></label>
+        <name>Outdoor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Equipment Available --></label>
+        <name>Special_Equipment_Available__c</name>
+        <picklistValues>
+            <masterLabel>Extra Subwoofers</masterLabel>
+            <translation><!-- Extra Subwoofers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lasers</masterLabel>
+            <translation><!-- Lasers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Drumsets</masterLabel>
+            <translation><!-- Multiple Drumsets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pyrotechnics</masterLabel>
+            <translation><!-- Pyrotechnics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smoke Machine</masterLabel>
+            <translation><!-- Smoke Machine --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
