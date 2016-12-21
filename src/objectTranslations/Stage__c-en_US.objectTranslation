@@ -53,5 +53,17 @@
             <translation><!-- Smoke Machine --></translation>
         </picklistValues>
     </fields>
+    <fields>
+        <label><!-- Stage Manager --></label>
+        <name>Stage_Manager__c</name>
+        <relationshipLabel><!-- Stages --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Stage Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

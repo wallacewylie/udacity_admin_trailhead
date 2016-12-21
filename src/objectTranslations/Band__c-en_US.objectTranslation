@@ -129,11 +129,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Stage --></label>
-        <name>Stage__c</name>
-        <relationshipLabel><!-- Bands --></relationshipLabel>
-    </fields>
-    <fields>
         <label><!-- Twitter Handle --></label>
         <name>Twitter_Handle__c</name>
     </fields>

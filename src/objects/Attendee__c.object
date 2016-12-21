@@ -52,7 +52,7 @@
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
-    <enableReports>false</enableReports>
+    <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
@@ -112,7 +112,7 @@
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>3rd Party Vendor</fullName>
+                <fullName>3rd Party Ticket Vendor</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -158,6 +158,18 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Spent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (ISPICKVAL (Ticket_Type__c , &quot;VIP&quot;), 100 *  Tickets_Purchased__c , 50 * Tickets_Purchased__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Spent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
     <label>Attendee</label>
     <listViews>

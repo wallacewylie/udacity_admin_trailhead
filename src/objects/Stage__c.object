@@ -50,9 +50,9 @@
     <description>Festival stages.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
-    <enableReports>false</enableReports>
+    <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
@@ -64,6 +64,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -77,6 +78,7 @@
         <relationshipName>Stages</relationshipName>
         <relationshipOrder>0</relationshipOrder>
         <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
@@ -87,6 +89,7 @@
         <description>Indicates whether stage has a piano.</description>
         <externalId>false</externalId>
         <label>Has Piano</label>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -96,6 +99,7 @@
         <description>Indicates whether stage is main stage.</description>
         <externalId>false</externalId>
         <label>Main Stage</label>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -105,6 +109,7 @@
         <description>Checks whether stage is outdoor or indoor (in a tent or building).</description>
         <externalId>false</externalId>
         <label>Outdoor</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -138,9 +143,23 @@
             <sorted>false</sorted>
         </picklist>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Stage_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The stage manager.</description>
+        <externalId>false</externalId>
+        <label>Stage Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Stages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <label>Stage</label>
     <listViews>
@@ -150,6 +169,7 @@
     </listViews>
     <nameField>
         <label>Stage Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Stages</pluralLabel>

@@ -44,4 +44,8 @@
         <name>Festival_App</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Festival_App_Solution</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>

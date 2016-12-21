@@ -10,4 +10,6 @@
     <tab>Attendee__c</tab>
     <tab>Stage__c</tab>
     <tab>Band__c</tab>
+    <tab>Set_Time__c</tab>
+    <tab>Maintenance_Ticket__c</tab>
 </CustomApplication>

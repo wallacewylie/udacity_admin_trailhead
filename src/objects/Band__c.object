@@ -52,7 +52,7 @@
     <enableBulkApi>false</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
-    <enableReports>false</enableReports>
+    <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>false</enableSharing>
     <enableStreamingApi>false</enableStreamingApi>
@@ -208,19 +208,6 @@
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>Stage__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>The stage where the band is playing.</description>
-        <externalId>false</externalId>
-        <label>Stage</label>
-        <referenceTo>Stage__c</referenceTo>
-        <relationshipLabel>Bands</relationshipLabel>
-        <relationshipName>Bands</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Twitter_Handle__c</fullName>
         <description>Twitter handle.</description>
         <externalId>false</externalId>
@@ -236,6 +223,19 @@
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Electronic</fullName>
+        <columns>NAME</columns>
+        <columns>Manager_Phone_Number__c</columns>
+        <columns>Twitter_Handle__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Genre__c</field>
+            <operation>equals</operation>
+            <value>Electronic</value>
+        </filters>
+        <label>Electronic</label>
     </listViews>
     <nameField>
         <label>Band Name</label>

@@ -29,8 +29,8 @@
         <label><!-- Purchase Source --></label>
         <name>Purchase_Source__c</name>
         <picklistValues>
-            <masterLabel>3rd Party Vendor</masterLabel>
-            <translation><!-- 3rd Party Vendor --></translation>
+            <masterLabel>3rd Party Ticket Vendor</masterLabel>
+            <translation><!-- 3rd Party Ticket Vendor --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Box Office</masterLabel>
@@ -60,6 +60,10 @@
     <fields>
         <label><!-- Tickets Purchased --></label>
         <name>Tickets_Purchased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Spent --></label>
+        <name>Total_Spent__c</name>
     </fields>
     <startsWith>Vowel</startsWith>
     <validationRules>
